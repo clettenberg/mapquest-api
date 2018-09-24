@@ -4,10 +4,29 @@ RSpec.describe Mapquest::API::Client::Search do
     let(:q) { 'Tower Grove Park' }
     it 'returns data' do
       response = client.search(q: q, format: 'jsonv2', addressdetails: '1')
+
       expect(response.is_a?(Array)).to eq true
       expect(response[0]['address']).to_not eq nil
       expect(response[0]['lat']).to_not eq nil
       expect(response[0]['lon']).to_not eq nil
+    end
+
+    describe 'when given an argument hash with different key types' do
+      it 'returns data' do
+        response = client.search({
+          "format" => "jsonv2",
+          "accept-language" => "en-US,en;q=0.9",
+          "addressdetails" => "1",
+          "polygon_geojson" => "1",
+          "namedetails" => "1",
+          q: "New York",
+          addressdetails: 1 })
+
+        expect(response.is_a?(Array)).to eq true
+        expect(response[0]['address']).to_not eq nil
+        expect(response[0]['lat']).to_not eq nil
+        expect(response[0]['lon']).to_not eq nil
+      end
     end
 
     describe 'for bad request' do
