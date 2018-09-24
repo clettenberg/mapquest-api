@@ -1,7 +1,7 @@
 require "mapquest/api/version"
+require "mapquest/api/client"
 
 module Mapquest
-  module Api
-    # Your code goes here...
+  module API
   end
 end

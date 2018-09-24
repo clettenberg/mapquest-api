@@ -1,9 +1,5 @@
-RSpec.describe Mapquest::Api do
+RSpec.describe Mapquest::API do
   it "has a version number" do
-    expect(Mapquest::Api::VERSION).not_to be nil
-  end
-
-  it "does something useful" do
-    expect(false).to eq(true)
+    expect(Mapquest::API::VERSION).not_to be nil
   end
 end

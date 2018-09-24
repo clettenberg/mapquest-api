@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://open.mapquestapi.com/nominatim/v1/search.php?addressdetails=1&format=xml&key=<API_KEY>&q=Tower%20Grove%20Park
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - text/xml; charset=UTF-8
+      Date:
+      - Mon, 24 Sep 2018 00:22:56 GMT
+      Server:
+      - Apache/2.4.6 (CentOS) PHP/5.4.16
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+      X-Powered-By:
+      - PHP/5.4.16
+      Content-Length:
+      - '2209'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiID8+CjxzZWFyY2hyZXN1bHRzIHRpbWVzdGFtcD0nU3VuLCAyMyBTZXAgMTggMTg6MjI6NTYgLTA2MDAnIGF0dHJpYnV0aW9uPSdEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cDovL3d3dy5vcGVuc3RyZWV0bWFwLm9yZy9jb3B5cmlnaHQnIHF1ZXJ5c3RyaW5nPSdUb3dlciBHcm92ZSBQYXJrJyBwb2x5Z29uPSdmYWxzZScgZXhjbHVkZV9wbGFjZV9pZHM9JzE2ODAwNjI2OCwyNDkyMzIzLDE4NzI0NDA2MCcgbW9yZV91cmw9J2h0dHA6Ly9pcC0xMC05OC0xNjUtOTkubXEtdXMtZWFzdC0xLmVjMi5hb2xjbG91ZC5uZXQvbm9taW5hdGltL3NlYXJjaC5waHA/cT1Ub3dlcitHcm92ZStQYXJrJmFtcDtleGNsdWRlX3BsYWNlX2lkcz0xNjgwMDYyNjglMkMyNDkyMzIzJTJDMTg3MjQ0MDYwJmFtcDthZGRyZXNzZGV0YWlscz0xJmFtcDtmb3JtYXQ9eG1sJz4KPHBsYWNlIHBsYWNlX2lkPScxNjgwMDYyNjgnIG9zbV90eXBlPSd3YXknIG9zbV9pZD0nNDM5ODE1MzY4JyBwbGFjZV9yYW5rPScyNCcgYm91bmRpbmdib3g9IjM4LjYwMjk1MDcsMzguNjA5Njg2MiwtOTAuMjY5MDM0NywtOTAuMjQxNTYyOCIgbGF0PSczOC42MDYyODAwNScgbG9uPSctOTAuMjU1Mjk5MDExNjYxNycgZGlzcGxheV9uYW1lPSdUb3dlciBHcm92ZSBQYXJrLCBUb3dlciBHcm92ZSBTb3V0aCwgU3QuIExvdWlzLCBDaXR5IG9mIFN0LiBMb3VpcywgTWlzc291cmksIDYzMTExLCBVbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2EnIGNsYXNzPSdsZWlzdXJlJyB0eXBlPSdwYXJrJyBpbXBvcnRhbmNlPScwLjMzNzUnPgo8cGFyaz5Ub3dlciBHcm92ZSBQYXJrPC9wYXJrPjxuZWlnaGJvdXJob29kPlRvd2VyIEdyb3ZlIFNvdXRoPC9uZWlnaGJvdXJob29kPjxjaXR5PlN0LiBMb3VpczwvY2l0eT48Y291bnR5PkNpdHkgb2YgU3QuIExvdWlzPC9jb3VudHk+PHN0YXRlPk1pc3NvdXJpPC9zdGF0ZT48cG9zdGNvZGU+NjMxMTE8L3Bvc3Rjb2RlPjxjb3VudHJ5PlVuaXRlZCBTdGF0ZXMgb2YgQW1lcmljYTwvY291bnRyeT48Y291bnRyeV9jb2RlPnVzPC9jb3VudHJ5X2NvZGU+PC9wbGFjZT48cGxhY2UgcGxhY2VfaWQ9JzI0OTIzMjMnIG9zbV90eXBlPSdub2RlJyBvc21faWQ9JzM1NDIyNTI5NicgcGxhY2VfcmFuaz0nMjQnIGJvdW5kaW5nYm94PSIzOS4yNzMzMzA5LDM5LjI3MzQzMDksLTg5Ljg4MzQ4MjgsLTg5Ljg4MzM4MjgiIGxhdD0nMzkuMjczMzgwOScgbG9uPSctODkuODgzNDMyOCcgZGlzcGxheV9uYW1lPSdUb3dlciBHcm92ZSBQYXJrLCBDYXJsaW52aWxsZSwgTWFjb3VwaW4gQ291bnR5LCBJbGxpbm9pcywgNjI2MjYsIFVuaXRlZCBTdGF0ZXMgb2YgQW1lcmljYScgY2xhc3M9J2xlaXN1cmUnIHR5cGU9J3BhcmsnIGltcG9ydGFuY2U9JzAuMzM3NSc+CjxwYXJrPlRvd2VyIEdyb3ZlIFBhcms8L3Bhcms+PGNpdHk+Q2FybGludmlsbGU8L2NpdHk+PGNvdW50eT5NYWNvdXBpbiBDb3VudHk8L2NvdW50eT48c3RhdGU+SWxsaW5vaXM8L3N0YXRlPjxwb3N0Y29kZT42MjYyNjwvcG9zdGNvZGU+PGNvdW50cnk+VW5pdGVkIFN0YXRlcyBvZiBBbWVyaWNhPC9jb3VudHJ5Pjxjb3VudHJ5X2NvZGU+dXM8L2NvdW50cnlfY29kZT48L3BsYWNlPjxwbGFjZSBwbGFjZV9pZD0nMTg3MjQ0MDYwJyBvc21fdHlwZT0nd2F5JyBvc21faWQ9JzU2Mjg3OTUwMycgcGxhY2VfcmFuaz0nMjQnIGJvdW5kaW5nYm94PSIzOS4yNzMwOSwzOS4yNzQwMTczLC04OS44ODQxMjYxLC04OS44ODI5MTQyIiBsYXQ9JzM5LjI3MzU0MTk1JyBsb249Jy04OS44ODM1MjEzMTI2NzQ2JyBkaXNwbGF5X25hbWU9J1Rvd2VyIEdyb3ZlIFBhcmssIENhcmxpbnZpbGxlLCBNYWNvdXBpbiBDb3VudHksIElsbGlub2lzLCA2MjYyNiwgVW5pdGVkIFN0YXRlcyBvZiBBbWVyaWNhJyBjbGFzcz0nbGVpc3VyZScgdHlwZT0ncGFyaycgaW1wb3J0YW5jZT0nMC4zMzc1Jz4KPHBhcms+VG93ZXIgR3JvdmUgUGFyazwvcGFyaz48Y2l0eT5DYXJsaW52aWxsZTwvY2l0eT48Y291bnR5Pk1hY291cGluIENvdW50eTwvY291bnR5PjxzdGF0ZT5JbGxpbm9pczwvc3RhdGU+PHBvc3Rjb2RlPjYyNjI2PC9wb3N0Y29kZT48Y291bnRyeT5Vbml0ZWQgU3RhdGVzIG9mIEFtZXJpY2E8L2NvdW50cnk+PGNvdW50cnlfY29kZT51czwvY291bnRyeV9jb2RlPjwvcGxhY2U+PC9zZWFyY2hyZXN1bHRzPg==
+    http_version: 
+  recorded_at: Mon, 24 Sep 2018 00:22:56 GMT
+recorded_with: VCR 3.0.3
