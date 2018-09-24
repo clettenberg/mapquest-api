@@ -1,5 +1,7 @@
 require "bundler/setup"
-require "mapquest/api"
+require "mapquest/api/client"
+require 'vcr'
+require 'pry'
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -11,4 +13,12 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+end
+
+VCR.configure do |c|
+  c.cassette_library_dir = 'spec/cassettes'
+  c.hook_into :webmock
+  c.configure_rspec_metadata!
+  c.ignore_localhost = true
+  c.filter_sensitive_data('<API_KEY>') { ENV['MAPQUEST_API_KEY'] }
 end

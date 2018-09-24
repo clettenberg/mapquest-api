@@ -1,0 +1,189 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://open.mapquestapi.com/nominatim/v1/search.php?addressdetails=1&format=html&key=<API_KEY>&q=Tower%20Grove%20Park
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Mon, 24 Sep 2018 00:22:56 GMT
+      Server:
+      - Apache/2.4.6 (CentOS) PHP/5.4.16
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+      X-Powered-By:
+      - PHP/5.4.16
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <title>OpenStreetMap
+        Nominatim: Search</title>\n    <meta content=\"IE=edge\" http-equiv=\"x-ua-compatible\"
+        />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n
+        \   <base href=\"http://ip-10-98-181-174.mq-us-east-1.ec2.aolcloud.net/nominatim/\"
+        />\n    <link href=\"nominatim.xml\" rel=\"search\" title=\"Nominatim Search\"
+        type=\"application/opensearchdescription+xml\" />\n    <link href=\"css/leaflet.css\"
+        rel=\"stylesheet\" />\n    <link href=\"css/Control.Minimap.min.css\" rel=\"stylesheet\"
+        />\n    <link href=\"css/bootstrap-theme.min.css\" rel=\"stylesheet\" />\n
+        \   <link href=\"css/bootstrap.min.css\" rel=\"stylesheet\" />\n    <link
+        href=\"css/common.css\" rel=\"stylesheet\" type=\"text/css\" />\n    <link
+        href=\"css/search.css\" rel=\"stylesheet\" type=\"text/css\" />\n</head>\n\n<body
+        id=\"search-page\">\n\n    <header class=\"container-fluid\">\n    <div class=\"row\">\n
+        \       <div class=\"col-xs-4\">\n            <div class=\"brand\">\n                <a
+        href=\"http://ip-10-98-181-174.mq-us-east-1.ec2.aolcloud.net/nominatim/\">\n
+        \               <img alt=\"logo\" src=\"images/osm_logo.120px.png\" width=\"30\"
+        height=\"30\"/>\n                <h1>Nominatim</h1>\n                </a>\n
+        \           </div>\n        </div>\n        <div id=\"last-updated\" class=\"col-xs-4
+        text-center\">\n                            Data last updated:\n                <br>\n
+        \               2018/03/17 12:51 GMT                    </div>\n        <div
+        class=\"col-xs-4 text-right\">\n            <div class=\"btn-group\">\n                <button
+        class=\"dropdown-toggle btn btn-sm btn-default\" data-toggle=\"dropdown\"
+        role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">\n                    About
+        &amp; Help <span class=\"caret\"></span>\n                </button>\n                <ul
+        class=\"dropdown-menu dropdown-menu-right\">\n                    <li><a href=\"https://wiki.openstreetmap.org/wiki/Nominatim\"
+        target=\"_blank\">Documentation</a></li>\n                    <li><a href=\"https://wiki.openstreetmap.org/wiki/Nominatim/FAQ\"
+        target=\"_blank\">FAQ</a></li>\n                    <li role=\"separator\"
+        class=\"divider\"></li>\n                    <li><a href=\"#\" class=\"\"
+        data-toggle=\"modal\" data-target=\"#report-modal\">Report problem with results</a></li>\n
+        \               </ul>\n            </div>\n        </div>\n    </div>\n</header>\n\n<div
+        class=\"modal fade\" id=\"report-modal\">\n    <div class=\"modal-dialog\">\n
+        \       <div class=\"modal-content\">\n            <div class=\"modal-header\">\n
+        \               <button type=\"button\" class=\"close\" data-dismiss=\"modal\"
+        aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button>\n
+        \               <h4 class=\"modal-title\">Report a problem</h4>\n            </div>\n
+        \           <div class=\"modal-body\">\n                <p>\n    Before reporting
+        problems please read the <a target=\"_blank\" href=\"https://wiki.openstreetmap.org/wiki/Nominatim\">user
+        documentation</a>\n    and\n    <a target=\"_blank\" href=\"https://wiki.openstreetmap.org/wiki/Nominatim/FAQ\">FAQ</a>.\n\n
+        \   If your problem relates to the address of a particular search result please
+        use the 'details' link \n    to check how the address was generated before
+        reporting a problem.\n</p>\n<p>\n    Use <a target=\"_blank\" href=\"https://github.com/openstreetmap/nominatim/issues\">Nominatim
+        issues on github</a>\n    to report problems.\n<!-- You can search for existing
+        bug reports\n    <a href=\"https://trac.openstreetmap.org/query?status=new&amp;status=assigned&amp;status=reopened&amp;component=nominatim&amp;order=priority\">here</a>.</p>\n
+        -->\n</p>\n<p>\n    Please ensure that you include a full description of the
+        problem, including the search\n    query that you used, the problem with the
+        result and, if the problem relates to missing data,\n    the osm type (node,
+        way, relation) and id of the item that is missing.\n</p>\n<p>\n    Problems
+        that contain enough detail are likely to get looked at before ones that require\n
+        \   significant research.\n</p>\n            </div>\n            <div class=\"modal-footer\">\n
+        \               <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">OK</button>\n
+        \           </div>\n        </div>\n    </div>\n</div>\n\n    <form class=\"form-inline\"
+        role=\"search\" accept-charset=\"UTF-8\" action=\"http://ip-10-98-181-174.mq-us-east-1.ec2.aolcloud.net/nominatim/search.php\">\n
+        \       <div class=\"form-group\">\n            <input id=\"q\" name=\"q\"
+        type=\"text\" class=\"form-control input-sm\" placeholder=\"Search\" value=\"Tower
+        Grove Park\" >\n        </div>\n        <div class=\"form-group search-button-group\">\n
+        \           <button type=\"submit\" class=\"btn btn-primary btn-sm\">Search</button>\n
+        \                           <input type=\"hidden\" value=\"1\" name=\"polygon_geojson\"
+        />\n                        <input type=\"hidden\" name=\"viewbox\" value=\"\"
+        />\n            <div class=\"checkbox-inline\">\n                <input type=\"checkbox\"
+        id=\"use_viewbox\" >\n                <label for=\"use_viewbox\">apply viewbox</label>\n
+        \           </div>\n        </div>\n        <div class=\"search-type-link\">\n
+        \           <a id=\"switch-to-reverse\" href=\"http://ip-10-98-181-174.mq-us-east-1.ec2.aolcloud.net/nominatim/reverse.php?format=html\">reverse
+        search</a>\n        </div>\n    </form>\n\n\n    <div id=\"content\">\n\n\n
+        \       <div id=\"searchresults\" class=\"sidebar\">\n        <div class=\"result\"
+        data-position=0> <span class=\"name\">Tower Grove Park, Tower Grove South,
+        St. Louis, City of St. Louis, Missouri, 63111, United States of America</span>
+        <span class=\"type\">(Park)</span> <a class=\"btn btn-default btn-xs details\"
+        href=\"details.php?place_id=168006268\">details</a></div><div class=\"result\"
+        data-position=1> <span class=\"name\">Tower Grove Park, Carlinville, Macoupin
+        County, Illinois, 62626, United States of America</span> <span class=\"type\">(Park)</span>
+        <a class=\"btn btn-default btn-xs details\" href=\"details.php?place_id=2492323\">details</a></div><div
+        class=\"result\" data-position=2> <span class=\"name\">Tower Grove Park, Carlinville,
+        Macoupin County, Illinois, 62626, United States of America</span> <span class=\"type\">(Park)</span>
+        <a class=\"btn btn-default btn-xs details\" href=\"details.php?place_id=187244060\">details</a></div><div
+        class=\"more\"><a class=\"btn btn-primary\" href=\"http://ip-10-98-181-174.mq-us-east-1.ec2.aolcloud.net/nominatim/search.php?q=Tower+Grove+Park&amp;exclude_place_ids=168006268%2C2492323%2C187244060&amp;addressdetails=1\">Search
+        for more results</a></div>        </div>\n\n\n        <div id=\"map-wrapper\">\n
+        \           <div id=\"map-position\">\n                <div id=\"map-position-inner\"></div>\n
+        \               <div id=\"map-position-close\"><a href=\"#\">hide</a></div>\n
+        \           </div>\n            <div id=\"map\"></div>\n        </div>\n\n
+        \   </div> <!-- /content -->\n\n\n\n\n\n\n\n    <script type=\"text/javascript\">\n
+        \   var nominatim_map_init = {\n    \"zoom\": 2,\n    \"lat\": 20,\n    \"lon\":
+        0,\n    \"tile_url\": \"https:\\/\\/{s}.tile.openstreetmap.org\\/{z}\\/{x}\\/{y}.png\",\n
+        \   \"tile_attribution\": \"\"\n};var nominatim_results = [\n    {\n        \"osm_type\":
+        \"W\",\n        \"osm_id\": \"439815368\",\n        \"class\": \"leisure\",\n
+        \       \"type\": \"park\",\n        \"admin_level\": \"15\",\n        \"rank_search\":
+        \"24\",\n        \"rank_address\": \"0\",\n        \"place_id\": \"168006268\",\n
+        \       \"parent_place_id\": \"46847526\",\n        \"housenumber\": \"-1\",\n
+        \       \"country_code\": \"us\",\n        \"langaddress\": \"Tower Grove
+        Park, Tower Grove South, St. Louis, City of St. Louis, Missouri, 63111, United
+        States of America\",\n        \"placename\": \"Tower Grove Park\",\n        \"ref\":
+        \"Tower Grove Park\",\n        \"lon\": \"-90.2552990116617\",\n        \"lat\":
+        \"38.60628005\",\n        \"importance\": 0.3375,\n        \"addressimportance\":
+        \"11.554408274544\",\n        \"extra_place\": null,\n        \"addresstype\":
+        \"leisure\",\n        \"aBoundingBox\": [\n            \"38.6029507\",\n            \"38.6096862\",\n
+        \           \"-90.2690347\",\n            \"-90.2415628\"\n        ],\n        \"label\":
+        \"Park\",\n        \"address\": {\n            \"park\": \"Tower Grove Park\",\n
+        \           \"neighbourhood\": \"Tower Grove South\",\n            \"city\":
+        \"St. Louis\",\n            \"county\": \"City of St. Louis\",\n            \"state\":
+        \"Missouri\",\n            \"postcode\": \"63111\",\n            \"country\":
+        \"United States of America\",\n            \"country_code\": \"us\"\n        },\n
+        \       \"name\": \"Tower Grove Park, Tower Grove South, St. Louis, City of
+        St. Louis, Missouri, 63111, United States of America\",\n        \"foundorder\":
+        -1.1476408274544\n    },\n    {\n        \"osm_type\": \"N\",\n        \"osm_id\":
+        \"354225296\",\n        \"class\": \"leisure\",\n        \"type\": \"park\",\n
+        \       \"admin_level\": \"15\",\n        \"rank_search\": \"24\",\n        \"rank_address\":
+        \"0\",\n        \"place_id\": \"2492323\",\n        \"parent_place_id\": \"187155726\",\n
+        \       \"housenumber\": \"-1\",\n        \"country_code\": \"us\",\n        \"langaddress\":
+        \"Tower Grove Park, Carlinville, Macoupin County, Illinois, 62626, United
+        States of America\",\n        \"placename\": \"Tower Grove Park\",\n        \"ref\":
+        \"Tower Grove Park\",\n        \"lon\": \"-89.8834328\",\n        \"lat\":
+        \"39.2733809\",\n        \"importance\": 0.3375,\n        \"addressimportance\":
+        \"7.76033481475436\",\n        \"extra_place\": null,\n        \"addresstype\":
+        \"leisure\",\n        \"aBoundingBox\": [\n            \"39.2733309\",\n            \"39.2734309\",\n
+        \           \"-89.8834828\",\n            \"-89.8833828\"\n        ],\n        \"label\":
+        \"Park\",\n        \"address\": {\n            \"park\": \"Tower Grove Park\",\n
+        \           \"city\": \"Carlinville\",\n            \"county\": \"Macoupin
+        County\",\n            \"state\": \"Illinois\",\n            \"postcode\":
+        \"62626\",\n            \"country\": \"United States of America\",\n            \"country_code\":
+        \"us\"\n        },\n        \"name\": \"Tower Grove Park, Carlinville, Macoupin
+        County, Illinois, 62626, United States of America\",\n        \"foundorder\":
+        -0.76823348147544\n    },\n    {\n        \"osm_type\": \"W\",\n        \"osm_id\":
+        \"562879503\",\n        \"class\": \"leisure\",\n        \"type\": \"park\",\n
+        \       \"admin_level\": \"15\",\n        \"rank_search\": \"24\",\n        \"rank_address\":
+        \"0\",\n        \"place_id\": \"187244060\",\n        \"parent_place_id\":
+        \"187155726\",\n        \"housenumber\": \"-1\",\n        \"country_code\":
+        \"us\",\n        \"langaddress\": \"Tower Grove Park, Carlinville, Macoupin
+        County, Illinois, 62626, United States of America\",\n        \"placename\":
+        \"Tower Grove Park\",\n        \"ref\": \"Tower Grove Park\",\n        \"lon\":
+        \"-89.8835213126746\",\n        \"lat\": \"39.27354195\",\n        \"importance\":
+        0.3375,\n        \"addressimportance\": \"7.76033481475436\",\n        \"extra_place\":
+        null,\n        \"addresstype\": \"leisure\",\n        \"aBoundingBox\": [\n
+        \           \"39.27309\",\n            \"39.2740173\",\n            \"-89.8841261\",\n
+        \           \"-89.8829142\"\n        ],\n        \"label\": \"Park\",\n        \"address\":
+        {\n            \"park\": \"Tower Grove Park\",\n            \"city\": \"Carlinville\",\n
+        \           \"county\": \"Macoupin County\",\n            \"state\": \"Illinois\",\n
+        \           \"postcode\": \"62626\",\n            \"country\": \"United States
+        of America\",\n            \"country_code\": \"us\"\n        },\n        \"name\":
+        \"Tower Grove Park, Carlinville, Macoupin County, Illinois, 62626, United
+        States of America\",\n        \"foundorder\": -0.76823348147544\n    }\n];
+        \   </script>\n    <footer>\n    <p class=\"disclaimer\">\n        Addresses
+        and postcodes are approximate\n    </p>\n    <p class=\"copyright\">\n        &copy;
+        <a href=\"https://osm.org/copyright\">OpenStreetMap</a> contributors\n    </p>\n</footer>\n\n<script
+        src=\"js/jquery.min.js\"></script>\n<script src=\"js/bootstrap.min.js\"></script>\n<script
+        src=\"js/leaflet.min.js\"></script>\n<script src=\"js/Control.Minimap.min.js\"></script>\n<script
+        src=\"js/nominatim-ui.js\"></script>\n\n</body>\n</html>\n"
+    http_version: 
+  recorded_at: Mon, 24 Sep 2018 00:22:56 GMT
+recorded_with: VCR 3.0.3
