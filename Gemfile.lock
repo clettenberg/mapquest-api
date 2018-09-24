@@ -52,12 +52,12 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.16)
   mapquest-api!
-  pry
+  pry (~> 0.11)
   rake (~> 10.0)
   rspec (~> 3.0)
   rspec_junit_formatter
-  vcr
-  webmock
+  vcr (~> 3.0)
+  webmock (~> 3.4)
 
 BUNDLED WITH
    1.16.4
