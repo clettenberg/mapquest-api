@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    mapquest-api (0.0.1)
+    mapquest-api (0.0.2)
       addressable (~> 2.5)
       faraday (~> 0.15)
 

@@ -1,0 +1,47 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://open.mapquestapi.com/nominatim/v1/reverse.php?key=<API_KEY>&lat=51.5217805&lon=-0.162823959130876
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.3
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - text/xml; charset=UTF-8
+      Date:
+      - Wed, 26 Sep 2018 01:13:36 GMT
+      Server:
+      - Apache/2.4.6 (CentOS) PHP/5.4.16
+      Status:
+      - success
+      Transactionweight:
+      - '1'
+      X-Powered-By:
+      - PHP/5.4.16
+      Content-Length:
+      - '886'
+      Connection:
+      - keep-alive
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiID8+CjxyZXZlcnNlZ2VvY29kZSB0aW1lc3RhbXA9J1R1ZSwgMjUgU2VwIDE4IDE5OjEzOjM2IC0wNjAwJyBhdHRyaWJ1dGlvbj0nRGF0YSDCqSBPcGVuU3RyZWV0TWFwIGNvbnRyaWJ1dG9ycywgT0RiTCAxLjAuIGh0dHA6Ly93d3cub3BlbnN0cmVldG1hcC5vcmcvY29weXJpZ2h0JyBxdWVyeXN0cmluZz0na2V5PTxBUElfS0VZPiZhbXA7bGF0PTUxLjUyMTc4MDUmYW1wO2xvbj0tMC4xNjI4MjM5NTkxMzA4NzYnPgo8cmVzdWx0IHBsYWNlX2lkPSI3ODM1NDg2OCIgb3NtX3R5cGU9IndheSIgb3NtX2lkPSIyNjk5NjkwMyIgcmVmPSJUaGUgTGFuZG1hcmsiIGxhdD0iNTEuNTIxNzgwNSIgbG9uPSItMC4xNjI4MjQwNTkxMzA4NzYiIGJvdW5kaW5nYm94PSI1MS41MjEzODUzLDUxLjUyMjIwNDYsLTAuMTYzNTI2MywtMC4xNjIxODcxIj5UaGUgTGFuZG1hcmssIE1lbGNvbWJlIFBsYWNlLCBNYXJ5bGVib25lLCBDaXR5IG9mIFdlc3RtaW5zdGVyLCBMb25kb24sIEdyZWF0ZXIgTG9uZG9uLCBFbmdsYW5kLCBOVzEgNkpSLCBVSzwvcmVzdWx0PjxhZGRyZXNzcGFydHM+PGhvdGVsPlRoZSBMYW5kbWFyazwvaG90ZWw+PHJvYWQ+TWVsY29tYmUgUGxhY2U8L3JvYWQ+PHN1YnVyYj5NYXJ5bGVib25lPC9zdWJ1cmI+PGNpdHk+TG9uZG9uPC9jaXR5PjxzdGF0ZV9kaXN0cmljdD5HcmVhdGVyIExvbmRvbjwvc3RhdGVfZGlzdHJpY3Q+PHN0YXRlPkVuZ2xhbmQ8L3N0YXRlPjxwb3N0Y29kZT5OVzEgNkpSPC9wb3N0Y29kZT48Y291bnRyeT5VSzwvY291bnRyeT48Y291bnRyeV9jb2RlPmdiPC9jb3VudHJ5X2NvZGU+PC9hZGRyZXNzcGFydHM+PC9yZXZlcnNlZ2VvY29kZT4=
+    http_version: 
+  recorded_at: Wed, 26 Sep 2018 01:13:36 GMT
+recorded_with: VCR 3.0.3
