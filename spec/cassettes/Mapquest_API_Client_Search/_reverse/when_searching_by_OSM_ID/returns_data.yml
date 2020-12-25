@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.3
+      - Faraday v1.2.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -18,30 +18,29 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Methods:
-      - OPTIONS,GET
-      Access-Control-Allow-Origin:
-      - "*"
+      Date:
+      - Fri, 25 Dec 2020 02:47:40 GMT
       Content-Type:
       - application/json; charset=UTF-8
-      Date:
-      - Wed, 26 Sep 2018 01:11:02 GMT
-      Server:
-      - Apache/2.4.6 (CentOS) PHP/5.4.16
-      Status:
-      - success
-      Transactionweight:
-      - '1'
-      X-Powered-By:
-      - PHP/5.4.16
       Content-Length:
       - '780'
       Connection:
       - keep-alive
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - Apache/2.4.6 (CentOS) PHP/5.4.16
+      X-Powered-By:
+      - PHP/5.4.16
+      Status:
+      - success
+      Transactionweight:
+      - '1'
     body:
       encoding: ASCII-8BIT
       string: !binary |-
         eyJwbGFjZV9pZCI6IjIyNTQwNDA4MSIsImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6XC9cL29zbS5vcmdcL2NvcHlyaWdodCIsIm9zbV90eXBlIjoid2F5Iiwib3NtX2lkIjoiNTAxMzM2NCIsImxhdCI6IjQ4Ljg1ODI2MDIiLCJsb24iOiIyLjI5NDQ5OTA1NDMxOTY4IiwicGxhY2VfcmFuayI6IjMwIiwiY2F0ZWdvcnkiOiJtYW5fbWFkZSIsInR5cGUiOiJ0b3dlciIsImltcG9ydGFuY2UiOiIwLjU1Mzc3MjEwMjk3MTQxNyIsImFkZHJlc3N0eXBlIjoibWFuX21hZGUiLCJkaXNwbGF5X25hbWUiOiJUb3VyIEVpZmZlbCwgNSwgQXZlbnVlIEFuYXRvbGUgRnJhbmNlLCBHcm9zLUNhaWxsb3UsIDdlLCBQYXJpcywgw45sZS1kZS1GcmFuY2UsIEZyYW5jZSBtw6l0cm9wb2xpdGFpbmUsIDc1MDA3LCBGcmFuY2UiLCJuYW1lIjoiVG91ciBFaWZmZWwiLCJhZGRyZXNzIjp7ImFkZHJlc3MyOSI6IlRvdXIgRWlmZmVsIiwiaG91c2VfbnVtYmVyIjoiNSIsInBlZGVzdHJpYW4iOiJBdmVudWUgQW5hdG9sZSBGcmFuY2UiLCJzdWJ1cmIiOiJHcm9zLUNhaWxsb3UiLCJjaXR5X2Rpc3RyaWN0IjoiN2UiLCJjaXR5IjoiUGFyaXMiLCJjb3VudHkiOiJQYXJpcyIsInN0YXRlIjoiw45sZS1kZS1GcmFuY2UiLCJjb3VudHJ5IjoiRnJhbmNlIiwicG9zdGNvZGUiOiI3NTAwNyIsImNvdW50cnlfY29kZSI6ImZyIn0sImJvdW5kaW5nYm94IjpbIjQ4Ljg1NzQ3NTMiLCI0OC44NTkwNDY1IiwiMi4yOTMzMDg0IiwiMi4yOTU2ODk3Il19
-    http_version: 
-  recorded_at: Wed, 26 Sep 2018 01:11:02 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Fri, 25 Dec 2020 02:47:40 GMT
+recorded_with: VCR 6.0.0

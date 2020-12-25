@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       User-Agent:
-      - Faraday v0.15.3
+      - Faraday v1.2.0
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -18,32 +18,32 @@ http_interactions:
       code: 200
       message: OK
     headers:
-      Access-Control-Allow-Methods:
-      - OPTIONS,GET
-      Access-Control-Allow-Origin:
-      - "*"
+      Date:
+      - Fri, 25 Dec 2020 02:47:42 GMT
       Content-Type:
       - text/html; charset=UTF-8
-      Date:
-      - Mon, 24 Sep 2018 00:22:56 GMT
-      Server:
-      - Apache/2.4.6 (CentOS) PHP/5.4.16
-      Status:
-      - success
-      Transactionweight:
-      - '1'
-      X-Powered-By:
-      - PHP/5.4.16
       Transfer-Encoding:
       - chunked
       Connection:
       - keep-alive
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - Apache/2.4.6 (CentOS) PHP/5.4.16
+      X-Powered-By:
+      - PHP/5.4.16
+      Status:
+      - success
+      Transactionweight:
+      - '1'
     body:
       encoding: UTF-8
       string: "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <title>OpenStreetMap
         Nominatim: Search</title>\n    <meta content=\"IE=edge\" http-equiv=\"x-ua-compatible\"
         />\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n\n
-        \   <base href=\"http://ip-10-98-181-174.mq-us-east-1.ec2.aolcloud.net/nominatim/\"
+        \   <base href=\"http://ip-10-98-162-13.mq-us-east-1.ec2.aolcloud.net/nominatim/\"
         />\n    <link href=\"nominatim.xml\" rel=\"search\" title=\"Nominatim Search\"
         type=\"application/opensearchdescription+xml\" />\n    <link href=\"css/leaflet.css\"
         rel=\"stylesheet\" />\n    <link href=\"css/Control.Minimap.min.css\" rel=\"stylesheet\"
@@ -53,7 +53,7 @@ http_interactions:
         href=\"css/search.css\" rel=\"stylesheet\" type=\"text/css\" />\n</head>\n\n<body
         id=\"search-page\">\n\n    <header class=\"container-fluid\">\n    <div class=\"row\">\n
         \       <div class=\"col-xs-4\">\n            <div class=\"brand\">\n                <a
-        href=\"http://ip-10-98-181-174.mq-us-east-1.ec2.aolcloud.net/nominatim/\">\n
+        href=\"http://ip-10-98-162-13.mq-us-east-1.ec2.aolcloud.net/nominatim/\">\n
         \               <img alt=\"logo\" src=\"images/osm_logo.120px.png\" width=\"30\"
         height=\"30\"/>\n                <h1>Nominatim</h1>\n                </a>\n
         \           </div>\n        </div>\n        <div id=\"last-updated\" class=\"col-xs-4
@@ -90,7 +90,7 @@ http_interactions:
         \   significant research.\n</p>\n            </div>\n            <div class=\"modal-footer\">\n
         \               <button type=\"button\" class=\"btn btn-default\" data-dismiss=\"modal\">OK</button>\n
         \           </div>\n        </div>\n    </div>\n</div>\n\n    <form class=\"form-inline\"
-        role=\"search\" accept-charset=\"UTF-8\" action=\"http://ip-10-98-181-174.mq-us-east-1.ec2.aolcloud.net/nominatim/search.php\">\n
+        role=\"search\" accept-charset=\"UTF-8\" action=\"http://ip-10-98-162-13.mq-us-east-1.ec2.aolcloud.net/nominatim/search.php\">\n
         \       <div class=\"form-group\">\n            <input id=\"q\" name=\"q\"
         type=\"text\" class=\"form-control input-sm\" placeholder=\"Search\" value=\"Tower
         Grove Park\" >\n        </div>\n        <div class=\"form-group search-button-group\">\n
@@ -100,7 +100,7 @@ http_interactions:
         />\n            <div class=\"checkbox-inline\">\n                <input type=\"checkbox\"
         id=\"use_viewbox\" >\n                <label for=\"use_viewbox\">apply viewbox</label>\n
         \           </div>\n        </div>\n        <div class=\"search-type-link\">\n
-        \           <a id=\"switch-to-reverse\" href=\"http://ip-10-98-181-174.mq-us-east-1.ec2.aolcloud.net/nominatim/reverse.php?format=html\">reverse
+        \           <a id=\"switch-to-reverse\" href=\"http://ip-10-98-162-13.mq-us-east-1.ec2.aolcloud.net/nominatim/reverse.php?format=html\">reverse
         search</a>\n        </div>\n    </form>\n\n\n    <div id=\"content\">\n\n\n
         \       <div id=\"searchresults\" class=\"sidebar\">\n        <div class=\"result\"
         data-position=0> <span class=\"name\">Tower Grove Park, Tower Grove South,
@@ -113,7 +113,7 @@ http_interactions:
         class=\"result\" data-position=2> <span class=\"name\">Tower Grove Park, Carlinville,
         Macoupin County, Illinois, 62626, United States of America</span> <span class=\"type\">(Park)</span>
         <a class=\"btn btn-default btn-xs details\" href=\"details.php?place_id=187244060\">details</a></div><div
-        class=\"more\"><a class=\"btn btn-primary\" href=\"http://ip-10-98-181-174.mq-us-east-1.ec2.aolcloud.net/nominatim/search.php?q=Tower+Grove+Park&amp;exclude_place_ids=168006268%2C2492323%2C187244060&amp;addressdetails=1\">Search
+        class=\"more\"><a class=\"btn btn-primary\" href=\"http://ip-10-98-162-13.mq-us-east-1.ec2.aolcloud.net/nominatim/search.php?q=Tower+Grove+Park&amp;exclude_place_ids=168006268%2C2492323%2C187244060&amp;addressdetails=1\">Search
         for more results</a></div>        </div>\n\n\n        <div id=\"map-wrapper\">\n
         \           <div id=\"map-position\">\n                <div id=\"map-position-inner\"></div>\n
         \               <div id=\"map-position-close\"><a href=\"#\">hide</a></div>\n
@@ -184,6 +184,5 @@ http_interactions:
         src=\"js/jquery.min.js\"></script>\n<script src=\"js/bootstrap.min.js\"></script>\n<script
         src=\"js/leaflet.min.js\"></script>\n<script src=\"js/Control.Minimap.min.js\"></script>\n<script
         src=\"js/nominatim-ui.js\"></script>\n\n</body>\n</html>\n"
-    http_version: 
-  recorded_at: Mon, 24 Sep 2018 00:22:56 GMT
-recorded_with: VCR 3.0.3
+  recorded_at: Fri, 25 Dec 2020 02:47:42 GMT
+recorded_with: VCR 6.0.0
